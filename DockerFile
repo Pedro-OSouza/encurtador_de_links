@@ -27,3 +27,5 @@ EXPOSE 80
 
 # Executa as migrações e inicia o Apache
 CMD php artisan migrate --force && apache2-foreground
+
+# .. 
