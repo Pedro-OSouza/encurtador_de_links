@@ -26,6 +26,6 @@ RUN chown -R www-data:www-data storage bootstrap/cache
 EXPOSE 80
 
 # Executa as migrações e inicia o Apache
-CMD php artisan migrate --force && apache2-foreground
+CMD php artisan config:clear && php artisan migrate --force && apache2-foreground
 
 # .. ..
